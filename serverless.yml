@@ -9,6 +9,10 @@ plugins:
 # serverless-webpack configuration
 # Enable auto-packing of external modules
 custom:
+  stage: ${opt:stage, self:provider.stage}
+  region: ${opt:region, self:provider.region}
+  ListingsDB: ${self:custom.stage}-lunar-listings
+  BookingsDB: ${self:custom.stage}-lunar-bookings
   webpack:
     webpackConfig: ./webpack.config.js
     includeModules: true
@@ -20,12 +24,28 @@ provider:
   runtime: nodejs12.x
   stage: dev
   region: us-east-1
-  # To load environment variables externally
-  # rename env.example to env.yml and uncomment
-  # the following line. Also, make sure to not
-  # commit your env.yml.
-  #
-  #environment: ${file(env.yml):${self:provider.stage}}
+  environment:
+    BookingsDB: ${self:custom.BookingsDB}
+    ListingsDB: ${self:custom.ListingsDB}
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:GetRecords
+        - dynamodb:GetShardIterator
+        - dynamodb:DescribeStream
+        - dynamodb:ListStream
+
+      Resource:
+        - "Fn::GetAtt": [ListingsDB, Arn]
+        - "Fn::GetAtt": [BookingsDB, Arn]
 
 functions:
   graphql:
@@ -44,3 +64,7 @@ functions:
           method: get
           cors: true
           integration: lambda-proxy
+
+resources:
+  - ${file(resources/listing-db.yml)}
+  - ${file(resources/bookingDB.yml)}
