@@ -13,6 +13,9 @@ custom:
   region: ${opt:region, self:provider.region}
   ListingsDB: ${self:custom.stage}-lunar-listings
   BookingsDB: ${self:custom.stage}-lunar-bookings
+  tableThroughputs:
+    prod: 1
+    default: 1
   webpack:
     webpackConfig: ./webpack.config.js
     includeModules: true
@@ -67,4 +70,4 @@ functions:
 
 resources:
   - ${file(resources/listing-db.yml)}
-  - ${file(resources/bookingDB.yml)}
+  - ${file(resources/booking-db.yml)}
