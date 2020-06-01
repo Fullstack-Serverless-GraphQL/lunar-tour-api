@@ -1,0 +1,20 @@
+Resources:
+  BookingsDB:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.BookingsDB}
+      AttributeDefinitions:
+        - AttributeName: bookingId
+          AttributeType: S
+        - AttributeName: listingId
+          AttributeType: S
+
+      KeySchema:
+        - AttributeName: bookingId
+          KeyType: HASH
+        - AttributeName: listingId
+          KeyType: RANGE
+      # Set the capacity based on the stage
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:custom.tableThroughput}
+        WriteCapacityUnits: ${self:custom.tableThroughput}
