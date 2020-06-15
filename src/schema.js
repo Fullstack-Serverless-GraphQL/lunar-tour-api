@@ -33,7 +33,7 @@ type ListingType {
    
 
      type Booking {
-          ID: String
+          bookingId: String
           listingID: String
           bookingDate: String
           size: Int
