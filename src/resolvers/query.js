@@ -47,3 +47,7 @@ export const getAllListings = async (args, context) => {
     };
   }
 };
+
+export const getAListing = async (args, context) => {
+  return null;
+};
