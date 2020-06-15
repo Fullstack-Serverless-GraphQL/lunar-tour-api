@@ -199,4 +199,84 @@ export const listings = [
     specialAmount: 0,
     specialType: "High Demand",
   },
+  {
+    coverPhoto:
+      "https://live.staticflickr.com/672/21281789484_0d7a257ec0_b.jpg",
+    guide: {
+      avatar: "https://randomuser.me/api/portraits/men/80.jpg",
+      bio:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo",
+      name: "Nikola Tesla",
+    },
+    listingActivities: ["Weapons demo", "Weapons materials creation"],
+    listingDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia corporis earum, rerum doloremque dolorum modi voluptates, eligendi? Minus cupiditate placeat, eveniet ad beatae animi illum nihil officia nulla, impedit sapiente.",
+    listingId: "a114dded-ddef-4052-a106-bb18b94e6b51",
+    listingLocation: "Piccolomini",
+    listingName: "Advanced Weapons Testing",
+    listingType: ["Hotel Avaialble", "Oxygen Avaialble", "Outside excursions"],
+    numberOfDays: 2,
+    price: "195.00",
+    rating: 2,
+    specialAmount: 0,
+    specialType: "None",
+  },
+  {
+    coverPhoto:
+      "https://live.staticflickr.com/5664/21061385534_ab38aec9e0_b.jpg",
+    guide: {
+      avatar:
+        "https://pbs.twimg.com/profile_images/834493671785525249/XdLjsJX_.jpg",
+      bio:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo",
+      name: "Antaya Valire",
+    },
+    listingActivities: [
+      "Rock collecting",
+      "Crater absailing",
+      "Geology decomposition",
+    ],
+    listingDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia corporis earum, rerum doloremque dolorum modi voluptates, eligendi? Minus cupiditate placeat, eveniet ad beatae animi illum nihil officia nulla, impedit sapiente.",
+    listingId: "c01682a0-aabf-40f2-b564-20364aa966ed",
+    listingLocation: "Metius",
+    listingName: "Geology Center",
+    listingType: ["Hands on", "Field work", "Dangerous"],
+    numberOfDays: 7,
+    price: "156.00",
+    rating: 3,
+    specialAmount: 0,
+    specialType: "none",
+  },
+  {
+    coverPhoto:
+      "https://live.staticflickr.com/749/21657696456_bbc6974617_b.jpg",
+    guide: {
+      avatar: "https://faces.design/faces/m/m10.png",
+      bio:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo",
+      name: "Dimpho Mgodpo",
+    },
+    listingActivities: [
+      "Solar system data viewing",
+      "Parker probe access",
+      "Deep space networking tuts",
+    ],
+    listingDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia corporis earum, rerum doloremque dolorum modi voluptates, eligendi? Minus cupiditate placeat, eveniet ad beatae animi illum nihil officia nulla, impedit sapiente.",
+    listingId: "c214b19f-720b-48c8-8855-2c13dd613ed5",
+    listingLocation: "Rheita",
+    listingName: "Deep Space Network Facility",
+    listingType: [
+      "Lab",
+      "Oxygen Avaialble",
+      "Highly interlectuall",
+      "Drug free",
+    ],
+    numberOfDays: 1,
+    price: "100.00",
+    rating: 2,
+    specialAmount: 0,
+    specialType: "none",
+  },
 ];
