@@ -9,10 +9,8 @@ export const getAllListings = async (args, context) => {
   };
 
   try {
-    console.log(params);
     const result = await dynamodb.scan(params);
 
-    console.log(result);
     if (result.Items.length === 0) {
       return "You have no listings";
     } else {
