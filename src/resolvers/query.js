@@ -5,7 +5,7 @@ export const hello = (args, context) => {
 
 export const getAllListings = async (args, context) => {
   const params = {
-    TableName: process.env.ListingsDB || "dev-listings",
+    TableName: process.env.ListingsDB || "dev-lunar-listings",
   };
 
   try {
@@ -50,7 +50,7 @@ export const getAllListings = async (args, context) => {
 
 export const getAListing = async (args, context) => {
   const params = {
-    TableName: process.env.ListingsDB || "dev-listings",
+    TableName: process.env.ListingsDB || "dev-lunar-listings",
     FilterExpression: "listingId = :listingId",
     ExpressionAttributeValues: {
       ":listingId": args.listingId,
