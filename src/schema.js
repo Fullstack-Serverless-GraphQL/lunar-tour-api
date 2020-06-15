@@ -30,7 +30,7 @@ type ListingType {
         numberOfDays: Int
      
      }
-   What
+   
 
 """
 A hello world Query
