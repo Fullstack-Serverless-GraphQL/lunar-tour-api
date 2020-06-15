@@ -15,6 +15,11 @@
     "type": "git",
     "url": "https://github.com/pimp-my-book/serverless-graphql-nodejs-starter"
   },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest-preload-env.js"
+    ]
+  },
   "devDependencies": {
     "serverless-bundle": "^1.2.5",
     "serverless-dotenv-plugin": "^2.1.1",
@@ -23,6 +28,7 @@
   "dependencies": {
     "apollo-server-lambda": "^2.14.3",
     "aws-sdk": "2.694.0",
+    "dotenv": "^8.2.0",
     "graphql": "^14.3.0",
     "stripe": "^8.63.0",
     "uuid": "^8.1.0"

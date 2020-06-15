@@ -7,7 +7,7 @@ export const makeABooking = async (args, context) => {
   //from the client
   const getPrices = async () => {
     const params = {
-      TableName: process.env.ListingsDB || "dev-listings",
+      TableName: process.env.ListingsDB || "dev-lunar-listings",
       KeyConditionExpression: "listingId = :listingId",
       ExpressionAttributeValues: {
         ":listingId": args.listingId,
@@ -47,7 +47,7 @@ export const makeABooking = async (args, context) => {
 
   //create the booking in the table
   const params = {
-    TableName: process.env.BookingsDB,
+    TableName: process.env.BookingsDB || "dev-lunar-bookings",
     Item: {
       bookingId: uuidv1(),
       listingId: args.listingId,
