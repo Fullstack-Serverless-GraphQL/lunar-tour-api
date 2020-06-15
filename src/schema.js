@@ -32,6 +32,34 @@ type ListingType {
      }
    
 
+     type Booking {
+          ID: String
+          listingID: String
+          bookingDate: String
+          size: Int
+          bookingTotal: String
+          customerEmail: String
+          customers: [Customer]
+          chargeReciept: String
+      
+      }
+      type Customer {
+        name: String
+        surname: String
+        country: String
+        passportNumber: String
+        physioScore: String
+      }
+    
+      input CustomerInput {
+        name: String
+        surname: String
+        country: String
+        passportNumber: String
+        physioScore: String
+      }
+    
+
 """
 A hello world Query
 """
@@ -42,6 +70,17 @@ type Query {
 
 }
 
+
+type Mutation {
+     makeABooking(
+       listingId: String
+       bookingDate: String,
+       customerEmail: String,
+       customers: [CustomerInput]
+     ): Booking
+   
+   }
+   
 `;
 
 export { schema };
