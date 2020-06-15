@@ -56,9 +56,10 @@ export const getAListing = async (args, context) => {
       ":listingId": args.listingId,
     },
   };
+  console.log(params);
 
   try {
-    const listing = await dynamoDBLib.call("scan", params);
+    const listing = await dynamodb.scan(params);
 
     console.log(listing);
 
