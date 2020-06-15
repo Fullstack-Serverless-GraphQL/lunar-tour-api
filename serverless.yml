@@ -18,9 +18,6 @@ custom:
     prod: 1
     default: 1
   tableThroughput: ${self:custom.tableThroughputs.${self:custom.stage}, self:custom.tableThroughputs.default}
-  webpack:
-    webpackConfig: ./webpack.config.js
-    includeModules: true
   serverless-offline:
     port: 4000
   bundle:
