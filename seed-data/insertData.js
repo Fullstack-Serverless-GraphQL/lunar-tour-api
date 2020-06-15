@@ -31,4 +31,17 @@ listings.map((l) => {
       specialType: l.specialType,
     },
   };
+
+  docClient.put(listingParams, function (err, data) {
+    if (err) {
+      console.error(
+        "Unable to add listing",
+        user.name,
+        ". Error JSON:",
+        JSON.stringify(err, null, 2)
+      );
+    } else {
+      console.log("PutItem succeeded:");
+    }
+  });
 });
