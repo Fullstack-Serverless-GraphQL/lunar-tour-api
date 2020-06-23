@@ -8,7 +8,6 @@
     "deploy": "sls deploy",
     "test": "serverless-bundle test"
   },
-  "type": "module",
   "author": "",
   "license": "MIT",
   "repository": {
