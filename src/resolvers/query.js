@@ -14,29 +14,7 @@ export const getAllListings = async (args, context) => {
     if (result.Items.length === 0) {
       return "You have no listings";
     } else {
-      return result.Items.map((i) => ({
-        listingId: i.listingId,
-        coverPhoto: i.coverPhoto,
-        listingName: i.listingName,
-        listingDescription: i.listingDescription,
-        listingType: i.listingType.map((m) => ({
-          name: m,
-        })),
-        listingLocation: i.listingLocation,
-        listingActivities: i.listingActivities.map((k) => ({
-          name: k,
-        })),
-        specialType: i.specialType,
-        specialAmount: i.specialAmount,
-        rating: i.rating,
-        guide: {
-          Name: i.guide.name,
-          Bio: i.guide.bio,
-          Avatar: i.guide.avatar,
-        },
-        price: i.price,
-        numberOfDays: i.numberOfDays,
-      }));
+      return result.Items;
     }
 
     // return result;
