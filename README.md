@@ -1,6 +1,6 @@
 # Lunar Tour API 🌟
 
-Welcome to the Lunar Tour API that is part of Fullstack Serverless GraphQL, which teaches you how to build Serverless GraphQL APIs.
+Welcome to the Lunar Tour API that is part of Fullstack Serverless GraphQL, which teaches you how to build Serverless GraphQL APIs. This API allows users to make bookings to lunar destinations, as well as view lunar holiday activies.
 
 The stack for this API is as follows:
 
@@ -26,7 +26,6 @@ First clone the repo:
 
 ```bash
 git clone https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-api
-
 ```
 
 Then cd into the directory of the project:
