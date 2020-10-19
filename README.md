@@ -48,7 +48,7 @@ sls offline
 
 You should be able to run queries and mutations against the API locally now.
 
-## Links to other work
+## Links to related projects
 
 🦚 [Lunar Tour (Vue)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-frontend)
 🦚 [Lunar Tour (React)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-react)
