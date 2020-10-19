@@ -19,3 +19,24 @@ What you need to use this Repo:
 🧁 Serverless Framework
 
 🧁 NodeJS v12.x or above
+
+## Installation steps
+
+First clone the repo:
+
+```bash
+git clone https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-api
+
+```
+
+Then cd into the directory of the project:
+
+```bash
+cd lunar-tour-api
+```
+
+Once you're in then install the packages using your fav package manager:
+
+```bash
+yarn install
+```
