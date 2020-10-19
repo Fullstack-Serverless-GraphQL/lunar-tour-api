@@ -51,5 +51,7 @@ You should be able to run queries and mutations against the API locally now.
 ## Links to related projects
 
 🦚 [Lunar Tour (Vue)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-frontend)
+
 🦚 [Lunar Tour (React)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-react)
+
 🦚 [Fullstack Serverless GraphQL docs](https://github.com/Fullstack-Serverless-GraphQL/fullstack-serverless-graphql-docs)
