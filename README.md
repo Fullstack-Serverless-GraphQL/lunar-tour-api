@@ -11,3 +11,11 @@ The stack for this API is as follows:
 🌟 Serverless Framework
 
 🌟 Apollo Lambda Server
+
+What you need to use this Repo:
+
+🧁 An AWS Account
+
+🧁 Serverless Framework
+
+🧁 NodeJS v12.x or above
