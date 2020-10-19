@@ -48,6 +48,8 @@ sls offline
 
 You should be able to run queries and mutations against the API locally now.
 
+This project was scaffolded using the [Serverless NodeJS GraphQL Starter](https://github.com/pimp-my-book/serverless-graphql-nodejs-starter)
+
 ## Links to related projects
 
 🦚 [Lunar Tour (Vue)](https://github.com/Fullstack-Serverless-GraphQL/lunar-tour-frontend)
