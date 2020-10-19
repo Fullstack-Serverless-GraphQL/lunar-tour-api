@@ -4,13 +4,13 @@ Welcome to the Lunar Tour API that is part of Fullstack Serverless GraphQL, whic
 
 The stack for this API is as follows:
 
-🌟 AWS Lambda
+🌟 [AWS Lambda](https://aws.amazon.com/lambda/)
 
-🌟 DynamoDB
+🌟 [DynamoDB](https://aws.amazon.com/dynamodb/)
 
-🌟 Serverless Framework
+🌟 [Serverless Framework](https://www.serverless.com/)
 
-🌟 Apollo Lambda Server
+🌟 [Apollo Lambda Server](https://www.apollographql.com/docs/apollo-server/)
 
 What you need to use this Repo:
 
@@ -40,7 +40,7 @@ Once you're in then install the packages using your fav package manager:
 yarn install
 ```
 
-Now you open playground on `localhost://4000` :
+Now you can open playground on `localhost://4000` :
 
 ```bash
 sls offline
